@@ -1,0 +1,99 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="demo_wrap">
+        <h2>Olá!</h2>
+        <br>
+        <h1>Bem vindos a minha página</h1>
+        <h2>Sou o Cristiano, estudante de desenvolvimento de Software, com conhecimentos em HTML, CSS, Js, Java, C#</h2>
+        <h2>Curso faculdade de Gestão da Tecnologia da Informação.</h2>
+        <br><br>
+        <button>Entre em Contato</button>
+        <img src="../images/low-raider.jpg" alt="lowRidder">
+    </div>
+    </header>
+    <br>
+    <nav>
+        <ul>
+            <a href="#aboutme"><i data-feather="user"></i>Sobre mim</a>
+            <a href="./hobbies.html" target="_blanc"><i data-feather="hobbie" ></i>Hobbies</a>
+            <a href="https://primeiro-site-snowy.vercel.app/" target="_blank"><i data-feather="site"></i>Portifólio</a>
+            <a href="#contact"><i data-feather="send"></i>Contato</a>
+        </ul>
+    </nav>
+    <section id="aboutme" class="about-me">
+        <div class="container">
+            <h1 class="title-green">Sobre mim</h1>
+            <p>Tenho 42 anos, trabalhei muito tempo como líder de produção, hoje estou na área de desenvolvimento, buscando novos desafios.
+              <br><br>
+                Sou determinado, gosto de estudar e me manter atualizado.
+            </p>
+
+        </div>
+        <div class="img-container">
+            <div class="line green"></div>
+            <div class="line purple"></div>
+            <img src="../images/tech.jpg" alt="trabalho">
+    
+    </div>
+    </section>
+    <br><br>
+    <div class="formulario">
+        <h1 id="titulo">Cadastro de Clientes</h1>
+        <p id="subtitulo">Complete Suas informações</p>
+        <br>
+    </div> 
+    <form>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" required>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <label for="tema">Escolha seu Tema</label>
+            <select  id="tema" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Empresa</option>
+                <option>Pessoal</option>
+                <option>Momentos</option>
+                <option>Familia</option>
+            </select>
+        </div>
+        <div>
+            <br>
+            <label for="projeto">Conte um pouco mais sobre seu projeto</label>
+            <textarea rows="6" style="width: 26em;" name="projeto" id="projeto"  ></textarea>
+        </div>
+        <button class="botao" type="submit" onsubmit="">Concluído</button>
+    </form>
+    <section id="contact" class="contact">
+        <h1>Solicite seu Orçamento!</h1>
+        <p>Sua idéia pode sair do papel, não deixe ela na gaveta, vamos fazer acontecer!! </p>
+        <button onclick="window.open('https://api.whatsapp.com/send?phone=5547999402766')">Entre em contato</button>
+    <div class="social-media">
+        <a href="https://linkedin.com/in/cristiano-leandro-rodrigues"><img src="../images/linkedin.png" alt="linkedin logo"></a>
+        <a href="https://api.whatsapp.com/send?phone=5547999402766"><img src="../images/whatsapp.png" alt="whatsapp logo"></a>
+    </div>
+</section>
+<footer>
+    <p>Criado por Cristiano Rodrigues - 2022</p>
+</footer>
+
+
+
+
+<script>
+    feather.replace ( )
+</script>
